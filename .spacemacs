@@ -36,19 +36,169 @@ values."
      ;; Uncomment some layer names and press <SPC f e R> (Vim style) or
      ;; <M-m f e R> (Emacs style) to install them.
      ;; ----------------------------------------------------------------
+     ;;================Chat
+     ;;erc
+     ;;jabber
+     ;;rcirc
+     ;;slack
+     ;;================Checkers
+     spell-checking
+     syntax-checking
+     ;;================Completion
+     auto-completion
      helm
-     ;; auto-completion
-     ;; better-defaults
+     ;;ivy
+     ;;================Emacs
+     better-defaults
+     ibuffer
+     org
+     ;;semantic
+     ;;smex
+     ;;typography
+     ;;================E-mail
+     ;;gnus
+     ;;mu4e
+     ;;================Frameworks
+     ;;django
+     ;;react
+     ;;ruby-on-rails
+     ;;================Fun
+     ;;emoji
+     ;;games
+     ;;selectric
+     ;;xkcd
+     ;;================International support
+     ;;chinese
+     (chinese :variables
+              chinese-enable-fcitx t
+              chinese-enable-youdao-dict t)
+     ;;keyboard-layout
+     ;;================Programming and markup languages
+     ;;agda
+     ;;asciidoc
+     ;;asm
+     ;;autohotkey
+     ;;bibtex
+     c-c++
+     ;;clojure
+     ;;common-lisp
+     ;;csharp
+     csv
+     ;;d
+     ;;elixir
+     ;;elm
      emacs-lisp
-     ;; git
-     ;; markdown
-     ;; org
-     ;; (shell :variables
-     ;;        shell-default-height 30
-     ;;        shell-default-position 'bottom)
-     ;; spell-checking
-     ;; syntax-checking
-     ;; version-control
+     ;;erlang
+     ;;ess
+     ;;extra-langs
+     ;;faust
+     ;;fsharp
+     go
+     ;;graphviz
+     ;;haskell
+     html
+     ;;idris
+     ;;ipython-notebook
+     java
+     javascript
+     latex
+     lua
+     markdown
+     ;;nim
+     ;;ocaml
+     ;;octave
+     ;;php
+     ;;plantuml
+     ;;purescript
+     python
+     ;;racket
+     ;;ruby
+     ;;rust
+     ;;scala
+     ;;scheme
+     ;;shaders
+     shell-scripts
+     ;;sml
+     sql
+     ;;swift
+     ;;typescript
+     vimscript
+     ;;windows-scripts
+     yaml
+     ;;================Misc
+     ;;nlinum
+     ;;================Operating systems
+     ;;nixos
+     ;;osx
+     ;;================Pair programming
+     ;;floobits
+     ;;================Source control
+     git
+     github
+     ;;perforce
+     version-control
+     ;;================Spacemacs distribution layers
+     ;;spacemacs-completion
+     ;;spacemacs-editing
+     ;;spacemacs-editing-visual
+     ;;spacemacs-evil
+     ;;spacemacs-language
+     ;;spacemacs-layouts
+     ;;spacemacs-misc
+     ;;spacemacs-org
+     ;;spacemacs-ui
+     ;;spacemacs-ui-visual
+     ;;================Tags
+     cscope
+     ;;gtags
+     ;;================Themes
+     ;;colors
+     themes-megapack
+     ;;theming
+     ;;================Tools
+     ;;ansible
+     ;;cfengine
+     ;;chrome
+     command-log
+     ;;dash
+     ;;deft
+     docker
+     ;;fasd
+     ;;finance
+     ;;geolocation
+     imenu-list
+     nginx
+     ;;pandoc
+     pdf-tools
+     ;;prodigy
+     ;;puppet
+     ranger
+     ;;restclient
+     ;;salt
+     ;;shell
+     (shell :variables
+            shell-default-height 30
+            shell-default-position 'bottom)
+     ;;speed-reading
+     systemd
+     ;;terraform
+     tmux
+     ;;vagrant
+     ycmd
+     ;;================Vim
+     ;;evil-cleverparens
+     ;;evil-commentary
+     ;;evil-snipe
+     ;;vim-empty-lines
+     ;;vim-powerline
+     ;;vinegar
+     ;;================Web services
+     ;;elfeed
+     ;;evernote
+     search-engine
+     ;;spotify
+     ;;twitter
+     ;;wakatime
      )
    ;; List of additional packages that will be installed without being
    ;; wrapped in a layer. If you need some configuration for these
@@ -318,3 +468,17 @@ you should place your code here."
 
 ;; Do not write anything past this comment. This is where Emacs will
 ;; auto-generate custom variable definitions.
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(package-selected-packages
+   (quote
+    (ibuffer-projectile imenu-list quickrun youdao-dictionary names chinese-word-at-point fcitx unfill mwim zonokai-theme zenburn-theme zen-and-art-theme underwater-theme ujelly-theme twilight-theme twilight-bright-theme twilight-anti-bright-theme tronesque-theme toxi-theme tao-theme tangotango-theme tango-plus-theme tango-2-theme sunny-day-theme sublime-themes subatomic256-theme subatomic-theme spacegray-theme soothe-theme solarized-theme soft-stone-theme soft-morning-theme soft-charcoal-theme smyx-theme seti-theme reverse-theme railscasts-theme purple-haze-theme professional-theme planet-theme phoenix-dark-pink-theme phoenix-dark-mono-theme pastels-on-dark-theme organic-green-theme omtose-phellack-theme oldlace-theme occidental-theme obsidian-theme noctilux-theme niflheim-theme naquadah-theme mustang-theme monokai-theme monochrome-theme molokai-theme moe-theme minimal-theme material-theme majapahit-theme madhat2r-theme lush-theme light-soap-theme jbeans-theme jazz-theme ir-black-theme inkpot-theme heroku-theme hemisu-theme hc-zenburn-theme gruvbox-theme gruber-darker-theme grandshell-theme gotham-theme gandalf-theme flatui-theme flatland-theme firebelly-theme farmhouse-theme espresso-theme dracula-theme django-theme darktooth-theme autothemer darkokai-theme darkmine-theme darkburn-theme dakrone-theme cyberpunk-theme color-theme-sanityinc-tomorrow color-theme-sanityinc-solarized clues-theme cherry-blossom-theme busybee-theme bubbleberry-theme birds-of-paradise-plus-theme badwolf-theme apropospriate-theme anti-zenburn-theme ample-zen-theme ample-theme alect-themes afternoon-theme engine-mode yapfify yaml-mode web-mode web-beautify vimrc-mode tagedit systemd sql-indent slim-mode scss-mode sass-mode ranger pyvenv pytest pyenv-mode py-isort pug-mode pip-requirements pdf-tools pangu-spacing nginx-mode magit-gh-pulls lua-mode livid-mode skewer-mode simple-httpd live-py-mode less-css-mode js2-refactor multiple-cursors js2-mode js-doc insert-shebang hy-mode helm-pydoc helm-css-scss helm-cscope xcscope haml-mode go-guru go-eldoc github-search github-clone github-browse-file gist gh marshal logito pcache ht flycheck-ycmd fish-mode find-by-pinyin-dired emmet-mode dockerfile-mode docker json-mode tablist docker-tramp json-snatcher json-reformat disaster dactyl-mode cython-mode csv-mode company-ycmd ycmd request-deferred deferred company-web web-completion-data company-tern dash-functional tern company-shell company-go go-mode company-emacs-eclim eclim company-c-headers company-auctex company-anaconda command-log-mode coffee-mode cmake-mode clang-format chinese-pyim chinese-pyim-basedict auctex-latexmk auctex anaconda-mode pythonic ace-pinyin pinyinlib ace-jump-mode xterm-color smeargle shell-pop orgit org-projectile org-present org-pomodoro alert log4e gntp org-download multi-term mmm-mode markdown-toc markdown-mode magit-gitflow htmlize helm-gitignore helm-company helm-c-yasnippet gnuplot gitignore-mode gitconfig-mode gitattributes-mode git-timemachine git-messenger git-link git-gutter-fringe+ git-gutter-fringe fringe-helper git-gutter+ git-gutter gh-md fuzzy flyspell-correct-helm flyspell-correct flycheck-pos-tip pos-tip flycheck evil-magit magit magit-popup git-commit with-editor eshell-z eshell-prompt-extras esh-help diff-hl company-statistics company auto-yasnippet yasnippet auto-dictionary ac-ispell auto-complete ws-butler winum which-key volatile-highlights vi-tilde-fringe uuidgen use-package toc-org spaceline powerline restart-emacs request rainbow-delimiters popwin persp-mode pcre2el paradox spinner org-plus-contrib org-bullets open-junk-file neotree move-text macrostep lorem-ipsum linum-relative link-hint info+ indent-guide hydra hungry-delete hl-todo highlight-parentheses highlight-numbers parent-mode highlight-indentation hide-comnt help-fns+ helm-themes helm-swoop helm-projectile helm-mode-manager helm-make projectile pkg-info epl helm-flx helm-descbinds helm-ag google-translate golden-ratio flx-ido flx fill-column-indicator fancy-battery eyebrowse expand-region exec-path-from-shell evil-visualstar evil-visual-mark-mode evil-unimpaired evil-tutor evil-surround evil-search-highlight-persist evil-numbers evil-nerd-commenter evil-mc evil-matchit evil-lisp-state smartparens evil-indent-plus evil-iedit-state iedit evil-exchange evil-escape evil-ediff evil-args evil-anzu anzu evil goto-chg undo-tree eval-sexp-fu highlight elisp-slime-nav dumb-jump f s diminish define-word column-enforce-mode clean-aindent-mode bind-map bind-key auto-highlight-symbol auto-compile packed dash aggressive-indent adaptive-wrap ace-window ace-link ace-jump-helm-line helm avy helm-core popup async))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
