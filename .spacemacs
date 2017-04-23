@@ -582,6 +582,7 @@ you should place your code here."
   (setq browse-url-browser-function 'browse-url-generic
         engine/browser-function 'browse-url-generic
         browse-url-generic-program "google-chrome-stable"
+        magit-repository-directories '("~/workspace/mygithub/")
         )
   (define-key evil-normal-state-map
     (kbd "SPC o y") 'youdao-dictionary-search-at-point+)
