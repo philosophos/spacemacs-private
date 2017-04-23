@@ -583,6 +583,8 @@ you should place your code here."
         engine/browser-function 'browse-url-generic
         browse-url-generic-program "google-chrome-stable"
         )
+  (define-key evil-normal-state-map
+    (kbd "SPC o y") 'youdao-dictionary-search-at-point+)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
