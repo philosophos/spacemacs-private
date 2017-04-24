@@ -584,6 +584,9 @@ you should place your code here."
         browse-url-generic-program "google-chrome-stable"
         magit-repository-directories '("~/workspace/mygithub/")
         )
+  (setq-default indent-tabs-mode t
+                tab-width 4
+                )
   (define-key evil-normal-state-map
     (kbd "SPC o y") 'youdao-dictionary-search-at-point+)
   )
