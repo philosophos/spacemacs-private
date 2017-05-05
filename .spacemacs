@@ -402,7 +402,7 @@ values."
    dotspacemacs-colorize-cursor-according-to-state t
    ;; Default font, or prioritized list of fonts. `powerline-scale' allows to
    ;; quickly tweak the mode-line size to make separators look not too crappy.
-   dotspacemacs-default-font '("Source Code Pro"
+   dotspacemacs-default-font '("Monospace"
                                :size 18
                                :weight normal
                                :width normal
@@ -599,6 +599,8 @@ you should place your code here."
   (setq pyim-page-tooltip 'popup
 		pyim-page-length 9)
   (chinese-pyim-greatdict-enable)
+  ;;(spacemacs//set-monospaced-font "Noto Sans Mono CJK SC" "Noto Sans Mono CJK SC" 18 18)
+  (setq line-spacing 2)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
