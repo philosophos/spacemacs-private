@@ -609,6 +609,12 @@ you should place your code here."
   (setq line-spacing 2)
   ;; FAQ 2.12 Prevent the visual selection overriding my system clipboard
   (fset 'evil-visual-update-x-selection 'ignore)
+  ;; FAQ 2.19 Remap paste key to be able to paste copied text multiple times
+  (defun evil-paste-after-from-0 ()
+	(interactive)
+	(let ((evil-this-register ?0))
+	  (call-interactively 'evil-paste-after)))
+  (define-key evil-visual-state-map "p" 'evil-paste-after-from-0)
   ;; ycmd support in other modes
   (add-hook 'go-mode-hook 'ycmd-mode)
   (add-hook 'javascript-mode-hook 'ycmd-mode)
