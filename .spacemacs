@@ -607,6 +607,8 @@ you should place your code here."
   (chinese-pyim-greatdict-enable)
   ;;(spacemacs//set-monospaced-font "Noto Sans Mono CJK SC" "Noto Sans Mono CJK SC" 18 18)
   (setq line-spacing 2)
+  ;; FAQ 2.12 Prevent the visual selection overriding my system clipboard
+  (fset 'evil-visual-update-x-selection 'ignore)
   ;; ycmd support in other modes
   (add-hook 'go-mode-hook 'ycmd-mode)
   (add-hook 'javascript-mode-hook 'ycmd-mode)
