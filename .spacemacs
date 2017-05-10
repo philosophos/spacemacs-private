@@ -575,6 +575,12 @@ before packages are loaded. If you are unsure, you should try in setting them in
         '(("melpa-cn" . "https://elpa.emacs-china.org/melpa/")
           ("org-cn"   . "https://elpa.emacs-china.org/org/")
           ("gnu-cn"   . "https://elpa.emacs-china.org/gnu/")))
+	(set-variable 'ycmd-server-command '("python" "/usr/share/vim/vimfiles/third_party/ycmd/ycmd/")
+				  ;; The `ycmd-server-command' variable can work properly in Arch
+				  ;; Linux with package `archlinuxcn/vim-youcompleteme-git'.
+				  ;; Note: The path should be end with `/' !
+				  ;;'ycmd-global-config (file-truename "~/.emacs.d/layers/+tools/ycmd/global_conf.py")
+				  )
   )
 
 (defun dotspacemacs/user-config ()
