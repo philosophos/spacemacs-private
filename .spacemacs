@@ -607,6 +607,10 @@ you should place your code here."
   (chinese-pyim-greatdict-enable)
   ;;(spacemacs//set-monospaced-font "Noto Sans Mono CJK SC" "Noto Sans Mono CJK SC" 18 18)
   (setq line-spacing 2)
+  ;; ycmd support in other modes
+  (add-hook 'go-mode-hook 'ycmd-mode)
+  (add-hook 'javascript-mode-hook 'ycmd-mode)
+  (add-hook 'python-mode-hook 'ycmd-mode)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
